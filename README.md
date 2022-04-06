@@ -4,7 +4,7 @@
     <img src="https://github.com/Futila/codeleap-code-test/blob/master/src/_github-assets/signup.JPG" width="500px" />
     <img src="https://github.com/Futila/codeleap-code-test/blob/master/src/_github-assets/main.png" width="500px" />
     <img src="https://github.com/Futila/codeleap-code-test/blob/master/src/_github-assets/edit.JPG" width="500px" />
-    <img src="https://github.com/Futila/codeleap-code-test/blob/master/src/_github-assets/edit.JPG" width="500px" />
+    
 
 </div>
 
