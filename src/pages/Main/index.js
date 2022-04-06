@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useSelector } from 'react-redux';
-import { formatDistance } from 'date-fns';
 import { useNavigate } from 'react-router-dom';
-import en from 'date-fns/locale/en-US';
+import { formatDateInWords } from '../../utils/formatDate';
 
 import { usePosts } from '../../hooks/posts';
 import { useUser } from '../../hooks/user';
@@ -34,7 +33,7 @@ export default function Main() {
 
   useEffect(() => {
     fetchPosts();
-  }, []);
+  });
 
   function handleLogout() {
     removeUser();
@@ -60,7 +59,7 @@ export default function Main() {
   return (
     <Container>
       <header>
-        CodeLeap NetWork{' '}
+        CodeLeap Network{' '}
         <button type="button" onClick={handleLogout}>
           Logout
         </button>
@@ -114,12 +113,7 @@ export default function Main() {
               <div>
                 <strong>@{post.username}</strong>
 
-                <span>
-                  {formatDistance(new Date(post.created_datetime), new Date(), {
-                    locale: en,
-                  })}{' '}
-                  ago
-                </span>
+                <span>{formatDateInWords(post.created_datetime)} ago</span>
               </div>
 
               <p>{post.content}</p>
