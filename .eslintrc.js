@@ -3,11 +3,7 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  extends: [
-    "plugin:react/recommended",
-    "airbnb",
-    "plugin:prettier/recommended",
-  ],
+  extends: ["plugin:react/recommended", "airbnb", "prettier"],
   parser: "@babel/eslint-parser",
   parserOptions: {
     requireConfigFile: false,
@@ -20,8 +16,9 @@ module.exports = {
     ecmaVersion: "latest",
     sourceType: "module",
   },
-  plugins: ["react", "react-hooks"],
+  plugins: ["react", "react-hooks", "prettier"],
   rules: {
+    "prettier/prettier": "error",
     "react/jsx-filename-extension": ["warn", { extensions: [".jsx", ".js"] }],
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
@@ -29,6 +26,7 @@ module.exports = {
     "no-param-reassign": "off",
     "jsx-a11y/label-has-associated-control": "off",
     "no-unused-vars": "off",
+    "no-alert": "off",
     "react/jsx-no-bind": [
       0,
       {

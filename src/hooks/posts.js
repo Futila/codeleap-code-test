@@ -27,7 +27,6 @@ export function usePosts() {
   const deletePost = async (post) => {
     const username = getUser();
     if (username !== post.username) {
-      console.log('Post não pertence a nós');
       return;
     }
     await api.delete(`${post.id}/`);
