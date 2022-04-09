@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  width: 800px;
+  width: 90%;
+  max-width: 800px;
   margin: 0 auto 50px;
   background: #fff;
 
@@ -32,7 +33,8 @@ export const Container = styled.div`
 export const Form = styled.form`
   display: flex;
   flex-direction: column;
-  width: 723px;
+  width: 90%;
+  max-width: 723px;
   height: 349px;
   padding: 30px;
   margin: 44px auto;
@@ -74,7 +76,8 @@ export const Form = styled.form`
 export const PostList = styled.ul`
   display: flex;
   flex-direction: column;
-  width: 723px;
+  width: 90%;
+  max-width: 723px;
   margin: 44px auto;
   background: #ffffff;
 
@@ -108,8 +111,8 @@ export const Content = styled.div`
   flex-direction: column;
 
   div {
-    width: 100%;
-    padding: 23px 30px 0;
+    width: 90%;
+    margin-top: 10px;
     display: flex;
     justify-content: space-between;
 
@@ -129,7 +132,8 @@ export const Content = styled.div`
     font-size: 18px;
     line-height: 21px;
     color: #000000;
-    width: 662px;
+    max-width: 662px;
+    width: 90%;
 
     text-align: justify;
     margin-bottom: 10px;
