@@ -33,7 +33,6 @@ export const Container = styled.div`
 export const Form = styled.form`
   display: flex;
   flex-direction: column;
-  width: 90%;
   max-width: 723px;
   height: 349px;
   padding: 30px;
@@ -86,17 +85,25 @@ export const PostList = styled.ul`
 export const PostItem = styled.li`
   border: 1px solid #999999;
   margin-bottom: 30px;
+  width: 100%;
   header {
     display: flex;
     align-items: center;
+
     justify-content: space-between;
+
+    strong {
+      color: #456789;
+      width: 80%;
+      word-wrap: break-word;
+    }
+    div {
+      display: flex;
+      align-items: center;
+      gap: 33px;
+    }
   }
 
-  div {
-    display: flex;
-    align-items: center;
-    gap: 33px;
-  }
   button {
     background: none;
     border: 0;
@@ -109,18 +116,17 @@ export const PostItem = styled.li`
 export const Content = styled.div`
   display: flex;
   flex-direction: column;
+  width: 100%;
 
   div {
+    margin: 0 auto;
     width: 90%;
-    margin-top: 10px;
+    padding: 23px 0;
+
     display: flex;
     justify-content: space-between;
 
-    strong {
-      font-size: 18px;
-      color: #777777;
-    }
-
+    strong,
     span {
       font-size: 18px;
       color: #777777;
@@ -128,14 +134,17 @@ export const Content = styled.div`
   }
 
   p {
+    margin: 0 auto;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
     color: #000000;
-    max-width: 662px;
     width: 90%;
+    max-width: 662px;
 
     text-align: justify;
     margin-bottom: 10px;
+
+    word-wrap: break-word;
   }
 `;
