@@ -7,7 +7,8 @@ export const Container = styled.div`
   justify-content: center;
 
   div {
-    width: 500px;
+    max-width: 500px;
+    width: 90%;
     background: #fff;
 
     padding: 28px;
@@ -29,14 +30,14 @@ export const Container = styled.div`
     }
 
     input {
-      width: 444px;
       height: 28px;
-
       padding: 6px;
       background: #ffffff;
       border: 1px solid #777777;
       box-sizing: border-box;
       border-radius: 4px;
+
+      flex: 1;
 
       ::placeholder {
         font-size: 14px;
