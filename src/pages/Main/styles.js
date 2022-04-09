@@ -131,6 +131,10 @@ export const Content = styled.div`
       font-size: 18px;
       color: #777777;
     }
+
+    @media (max-width: 320px) {
+      flex-direction: column;
+    }
   }
 
   p {
